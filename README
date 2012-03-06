@@ -1,0 +1,52 @@
+== Pin Button
+
+A gem to add the Pinterest 'Pin it' button to a rails project view. It borrows heavily from the tweet-button gem by intridea for it's structure.
+
+This makes it much easier to tag images using controller variables in your views.
+
+== Installation
+
+**On Rails 3.x,** add the gem to your Gemfile (if you're using Bundler).
+	
+	gem "pin-it-button"
+	
+== Usage
+
+First you'll want to include PinItButton in your application helper
+
+	include PinItButton
+	
+You then have access to the pin it button helper in your views. The button needs a few arguments to get going.
+
+*+:description+ - the description you would like to display to the user by default
+*+:media+ - the url of the image you would like the user to pin
+*+:'count-layout'+ - the layout of the counter. (vertical, horizontal, none)
+
+An example would be:
+
+	<%= pin-it-button :description => "this is my amazing image", :media => "my_image.png", :'count-layout' => "none" %>
+
+== Universal defaults
+
+After you've included the module in your helper view, you can set any defaults by using:
+
+	PinItButton.default_pin_button_options = {:url => "example.com"}
+
+Any other defaults will stay the same.
+
+== Note on Patches/Pull Requests
+ 
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+== To do
+
+* Add some tests :/
+
+== Copyright
+
+Copyright (c) 2012 Will R. See LICENSE for details.
