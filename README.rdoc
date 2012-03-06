@@ -21,7 +21,7 @@ You then have access to the pin it button helper in your views. The button needs
 
 * +:description+ - the description you would like to display to the user by default
 * +:media+ - the url of the image you would like the user to pin
-* +:count-layout+ - the layout of the counter. (vertical, horizontal, none).
+* +:'count-layout'+ - the layout of the counter. (vertical, horizontal, none).
 
 An example would be:
 
